@@ -1,0 +1,170 @@
+/************ TAG Selectors ***********/
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+/*********** CLASS Selectors **********/
+
+.color-bg {
+    background-color: #ff4c68;
+    color: #ffffff;
+}
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+.download-btn {
+    margin: 5% 3% 5% 0;
+}
+
+.features-icons {
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+.features-icons:hover {
+    color: #ff4c68
+}
+
+.features-item {
+    padding: 7% 5%;
+}
+
+.footer-copyright {
+    font-size: 1.25rem;
+}
+
+.footer-icons {
+    margin: 20px 10px;
+}
+
+.heading-lg {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+.heading-md {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.heading-sm {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navbar {
+    padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+    font-weight: 500; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar-collapse {
+    text-align: end;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.press-logo {
+    margin: 20px 20px 50px;
+    width: 15%;
+}
+
+.pricing-col {
+    padding: 3% 2%;
+}
+
+.sign-up-btn {
+    margin-top: 2.5rem;
+}
+
+.testimonial-image {
+    border-radius: 100%;
+    margin: 20px;
+    width: 10%;
+}
+
+.title-content {
+    padding-bottom: 7%;
+    text-align: start;
+}
+
+.title-img {
+    position: absolute;
+    right: 30%;
+    transform: rotate(25deg);
+    width: 60%;
+}
+
+.title-img-container {
+    position: relative;
+}
+
+.white-bg {
+    background-color: #ffffff;
+}
+
+/************ ID Selectors ************/
+#features {
+    position: relative;
+}
+
+#features .container-fluid {
+    padding: 3% 15%;
+}
+
+#press {
+    background-color: #ef8172;
+    padding-bottom: 3%;
+}
+
+#pricing {
+    padding: 100px;
+}
+
+#testimonials {
+    background-color: #ef8172;
+}
+
+#title .container-fluid {
+    padding: 3% 15%;
+}
+
+/************ Media Queries ************/
+@media screen and (max-width: 991px) {
+
+    .title-img {
+        position: static;
+        transform: rotate(0deg);
+    }
+
+    .title-content {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .nav-item {
+        padding: 0;
+    }
+
+}

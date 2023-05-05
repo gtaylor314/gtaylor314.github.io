@@ -1,0 +1,44 @@
+/********** Element Selectors **********/
+a {
+    color: #EEE;
+    text-decoration: none;
+    font-family: 'Indie Flower', cursive;
+}
+
+body {
+    background-color: #393E46;
+    margin: 0;
+    text-align: center;
+}
+
+footer {
+    margin-top: 5%;
+}
+
+h1 {
+    color: #4ECCA3;
+    font-family: 'Lobster', cursive;
+    font-size: 8rem;
+    margin: 30px;
+    text-shadow: 5px 0 #232931;
+}
+
+img {
+    width: 80%;
+}
+
+p {
+    color: #4ECCA3;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
+}
+
+/*********** Class Selectors ***********/
+.container {
+    margin: auto;
+    width: 70%;
+}
+
+.dice {
+    display: inline-block;
+}

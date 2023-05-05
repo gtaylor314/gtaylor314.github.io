@@ -1,0 +1,412 @@
+/*********** Element Selectors ***********/
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+/************ Class Selectors ***********/
+.about-img {
+    float: right;
+    height: 300px;
+    margin-left: 2%;
+    width: 300px;
+}
+
+.about-text {
+    font-size: 1.25rem;
+    margin-bottom: 3%;
+    text-align: justify;
+}
+
+.caption-text-dark-bg {
+    color: #fff;
+}
+
+.caption-text-light-bg {
+    color: #000;
+}
+
+.carousel {
+    margin-bottom: 3%;
+    padding-bottom: 2.5%;
+}
+
+.carousel-caption {
+    background-color: #B8B8B8C0;
+    border-radius: 10px;
+    bottom: 3rem;
+    left: 20%;
+    right: 20%;
+}
+
+.carousel-link {
+    margin: 0 10% 2%;
+}
+
+.carousel-link-img {
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px #ADADAD;
+}
+
+.carousel-link-img:hover {
+    box-shadow: 8px 8px 8px #6D6D6D;
+}
+
+.contact-container {
+    margin: 0 10%;
+}
+
+.footer-container {
+    margin: 3% 0;
+}
+
+.footer-container a {
+    color: #000;
+    margin: 2%;
+}
+
+.form-col {
+    display: inline-block;
+    margin: 0 10px;
+    width: 40%;
+}
+
+.form-container {
+    margin: 40px auto;
+    width: 50%;
+}
+
+.form-fields, .form-msg {
+    width: 100%;
+}
+
+.form-label {
+    display: block;
+    text-align: left;
+}
+
+.form-msg-container {
+    margin: 0 auto;
+    width: 83%;
+}
+
+.heading-dark-bg {
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 3% 0;
+}
+
+.heading-light-bg {
+    color: #000;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 3% 0;
+}
+
+/* position left timeline containers */
+.left {
+    left: 0;
+}
+
+/* right-pointing left side arrow */
+.left::before {
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    content: '';
+    height: 0;
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    width: 0;
+    z-index: 1;
+}
+
+.navbar-brand {
+    padding-left: 8px;
+}
+
+/* position right timeline containers */
+.right {
+    left: 50%;
+}
+
+/* left-pointing right side arrow */
+.right::before {
+    border-color: transparent #fff transparent transparent;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    content: '';
+    height: 0;
+    left: 15px;
+    position: absolute;
+    top: 17px;
+    width: 0;
+    z-index: 1;
+}
+
+/* override tl-container::after's right 
+property to position circle on the left */
+.right::after {
+    left: -12px;
+}
+
+.scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.scolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.special-thanks {
+    color: #ADADAD;
+    margin-top: 2%;
+}
+
+.text-right-align {
+    text-align: right;
+}
+
+.timeline {
+    margin: 0 auto;
+    max-width: 1400px;
+    position: relative;
+}
+
+/* vertical rule - white timeline */
+.timeline::after {
+    background-color: #fff;
+    bottom: 0;
+    content: '';
+    left: 50%;
+    margin-left: -3px;
+    position: absolute;
+    top: 0;
+    width: 6px;
+}
+
+.title-img {
+    height: auto;
+    max-width: 100%;
+}
+
+.tl-container {
+    padding: 17px 21px;
+    position: relative;
+    width: 50%;
+}
+
+/* circles on the timeline */
+.tl-container::after {
+    background-color: #fff;
+    border: 4px solid #BF952C;
+    border-radius: 50%;
+    content: '';
+    height: 25px;
+    position: absolute;
+    right: -12px;
+    top: 15px;
+    width: 25px;
+    z-index: 1;
+}
+
+.tl-content {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 2%;
+    position: relative;
+    text-align: start;
+}
+
+.ty-checkmark {
+    color: green;
+    height: 28%;
+    width: 28%;
+}
+
+.ty-container {
+    left: 50%;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ty-heading {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 10rem;
+}
+
+/************* ID Selectors *************/
+#about {
+    background-color: #fff;
+    margin: 3% 12%;
+}
+
+#about h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+
+#experience {
+    background-color: #595959;
+    padding-bottom: 3%;
+}
+
+#projects {
+    background-color: #fff;
+}
+
+#skills {
+    background-color: #fff;
+}
+
+/************ Media Queries ************/
+/* responsiveness for smaller screens */
+@media screen and (max-width: 600px) {
+
+    .about-text {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .carousel-caption {
+        display: none;
+    }
+
+    .form-col {
+        display: block;
+        margin: 0 0 20px;
+        padding: 0 10%;
+        width: 100%;
+    }
+
+    .form-container {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .heading-dark-bg, .heading-light-bg {
+        font-size: 2rem;
+    }
+
+    .left::after {
+        left: 18px;
+    }
+
+    .right {
+        left: 0;
+    }
+
+    .right::after {
+        left: 18px;
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .tl-container {
+        /* keep 17px top and bottom padding */
+        padding-left: 70px;
+        padding-right: 25px;
+        width: 100%
+    }
+
+    .tl-container::before {
+        border-color: transparent #fff transparent transparent;
+        border-style: solid;
+        border-width: 10px 10px 10px 0;
+        left: 64px;
+    }
+
+}
+
+@media screen and (max-width: 820px) {
+    .about-img {
+        float: none;
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 950px) {
+
+    .form-col {
+        display: block;
+        margin: 0 0 20px;
+        padding: 0 10%;
+        width: 100%;
+    }
+
+    .form-container {
+        margin: 20px auto;
+        width: 75%;
+    }
+}
+
+/* font adjustments for the thank you page */
+@media screen and (max-width: 486px) {
+
+    .ty-heading {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 487px) and (max-width: 649px) {
+
+    .ty-heading {
+        font-size: 3rem;
+    }
+
+}
+
+@media screen and (min-width: 650px) and (max-width: 811px) {
+
+    .ty-heading {
+        font-size: 4rem;
+    }
+
+}
+
+@media screen and (min-width: 812px) and (max-width: 973px) {
+
+    .ty-heading {
+        font-size: 5rem;
+    }
+
+}
+
+@media screen and (min-width: 974px) and (max-width: 1136px) {
+
+    .ty-heading {
+        font-size: 6rem;
+    }
+
+}
+
+@media screen and (min-width: 1137px) and (max-width: 1298px) {
+
+    .ty-heading {
+        font-size: 7rem;
+    }
+
+}
+
+@media screen and (min-width: 1299px) and (max-width: 1623px) {
+
+    .ty-heading {
+        font-size: 8rem;
+    }
+
+}

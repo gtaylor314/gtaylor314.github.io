@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Garrett's Personal Site</title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+        <!-- external css -->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/9edb3e2a9d.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- Title -->
+        <section id="title">
+            <div>
+                <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#title"><span class="fa-solid fa-user-astronaut fa-xl"></span></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="topNavbar">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item text-right-align">
+                                    <a class="nav-link active" aria-current="page" href="#title">Home</a>
+                                </li>
+                                <li class="nav-item text-right-align">
+                                    <a class="nav-link" href="#about">About</a>
+                                </li>
+                                <li class="nav-item text-right-align">
+                                    <a class="nav-link" href="#projects">Projects</a>
+                                </li>
+                                <li class="nav-item text-right-align">
+                                    <a class="nav-link" href="#experience">Experience</a>
+                                </li>
+                                <li class="nav-item text-right-align">
+                                    <a class="nav-link" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <img src="images/desk-header-with-name-v2.png" class="title-img" alt="image of minimal, modern desk with hi I'm Garrett across the top">
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <h2 class="heading-light-bg">My Story</h2>
+            <h4>Hello! Welcome to my personal website! My name is Garrett and I am so excited that you are here!</h4>
+            <img src="images/cartoon-self-edit.png" class="about-img" height= "300px" width="300px" alt="cartoon image of myself">
+            <div>
+                <p class="about-text">
+                    To share a little about myself, just about a year ago now, I left my job in the Information Technology field 
+                    to pursue my dream of becoming a software developer. I had a bachelor's degree in computer engineering, I enjoyed 
+                    writing code, and I longed for a job where I could stretch my creative muscles, attack interesting problems, and 
+                    work hard at work worth doing. So I took the leap of faith and I am so glad I did!
+                </p>
+                <p class="about-text">
+                    I have spent the past year taking online development courses, reading through copious amounts of documentation, 
+                    updating, practicing, and bettering my skill set and, now, I'm looking to start my career. Feel free to explore 
+                    some of my more fun projects and more of my experience down below. Thanks!
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <h2 class="heading-light-bg">Some Fun Projects</h2>
+            <div id="projectCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="tindog website"></button>
+                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" aria-label="simplebank project"></button>
+                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2" aria-label="dice game website"></button>
+                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="3" aria-label="url shortner project"></button>
+                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="4" aria-label="drum kit website"></button>
+                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="5" aria-label="simon game website"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-link">
+                            <a href="tindog/tindog.html">
+                                <img src="images/tindog-site.png" class="d-block w-100 carousel-link-img" alt="screenshot of tindog website">
+                            </a>
+                        </div>
+                        <div class="carousel-caption">
+                            <h5 class="caption-text-light-bg">Tindog. Tinder, but for dogs!</h5>
+                            <p class="caption-text-light-bg">Be sure to check out this fun, made up dating site for dogs and their owners who just want them to be happy.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-link">
+                            <a href="https://github.com/gtaylor314/simplebank" target="_blank" rel="noreferrer">
+                                <img src="images/simplebank-backend.png" class="d-block w-100 carousel-link-img" alt="screenshot of simplebank code">
+                            </a>
+                        </div>
+                        <div class="carousel-caption">
+                            <h5 class="caption-text-dark-bg">Simple Bank API. Some backend development fun!</h5>
+                            <p class="caption-text-dark-bg">Feel free to peruse through the Simple Bank API GitHub Repository. Written in Golang.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-link">
+                            <a href="dice-game/dice.html">
+                                <img src="images/dice-game-site.png" class="d-block w-100 carousel-link-img" alt="screenshot of dice game website">
+                            </a>
+                        </div>
+                        <div class="carousel-caption">
+                            <h5 class="caption-text-light-bg">Dice Game. Are you a winner?</h5>
+                            <p class="caption-text-light-bg">Every time this website loads, there's a winner. Refresh to see who wins! Maybe you'll both win...</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-link">
+                            <a href="https://github.com/gtaylor314/url-shortener" target="_blank" rel="noreferrer">
+                                <img src="images/urlshortner-golang.png" class="d-block w-100 carousel-link-img" alt="screenshot of url shortner code">
+                            </a>
+                        </div>
+                        <div class="carousel-caption">
+                            <h5 class="caption-text-dark-bg">A Little URL Shortner. Just having some fun!</h5>
+                            <p class="caption-text-dark-bg">Take a look at this GitHub Repository for a simple URL shortner. Written in Golang.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-link">
+                            <a href="drum-kit/drumkit.html">
+                                <img src="images/drum-kit-site.png" class="d-block w-100 carousel-link-img" alt="screenshot of drum kit website">
+                            </a>
+                        </div>
+                        <div class="carousel-caption">
+                            <h5 class="caption-text-light-bg">Drum Kit. Make some percussive music!</h5>
+                            <p class="caption-text-light-bg">Play on this virtual drum kit with either mouse or keyboard. Check your volume level!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-link">
+                            <a href="simon-game/simon.html">
+                                <img src="images/simon-game-site.png" class="d-block w-100 carousel-link-img" alt="screenshot of simon game website">
+                            </a>
+                        </div>
+                        <div class="carousel-caption">
+                            <h5 class="caption-text-light-bg">Simon The Game! Well, sort of.</h5>
+                            <p class="caption-text-light-bg">Play this modified version of the game Simon! Check your volume level and have fun!</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience">
+            <h2 class="heading-dark-bg">Where I Am and Where I've Been</h2>
+            <div class="timeline">
+                <div class="tl-container left">
+                    <div class="tl-content">
+                        <h5>07/2022-Present</h5>
+                        <h6>Career Transition</h6>
+                        <p>
+                            I "burned my ship," as it were, and left my job at the Manatee County Sheriff's Office. I didn't want 
+                            to give myself an easy way out when the pursuit of my dream career became difficult. Currently, I spend 
+                            my time <strong>taking online courses, reading through volumes of documentation, learning new skills, 
+                            updating old skills, and gaining as much experience as I can</strong> in pursuit of a career in software
+                            development. 
+                        </p>
+                    </div>
+                </div>
+                <div class="tl-container right">
+                    <div class="tl-content">
+                        <h5>08/2020-07/2022</h5>
+                        <h6>Radio/Mobile Device Analyst</h6>
+                        <p>
+                            My final role at the Manatee County Sheriff's Office. As a newly created position, I had to break a lot 
+                            of new ground. <strong>I learned a great deal about project planning, product roll outs, running product 
+                            demos, and soliciting feedback from often non-technical staff.</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="tl-container left">
+                    <div class="tl-content">
+                        <h5>08/2017-08/2020</h5>
+                        <h6>Network Analyst</h6>
+                        <p>
+                            My second role at the Manatee County Sheriff's Office. Having had no prior training, I took numerous courses, 
+                            obtained certifications from VMware, Dell, NetMotion, and Microsoft, and established relationships with fellow 
+                            industry analysts. <strong>I learned to dig through documentation, plan and document maintenance procedures, 
+                            and to work with industry partners to make maintenance and upgrade impacts minimal.</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="tl-container right">
+                    <div class="tl-content">
+                        <h5>04/2016-08/2017</h5>
+                        <h6>Service Desk Technician</h6>
+                        <p>
+                            My first role at the Manatee County Sheriff's Office, and my first experience with providing enterprise level 
+                            support. <strong>I learned how to provide effective remote support, how to work with others on separate shifts 
+                            and rotations, how to document issues and solutions for others to use, and how to provide on-call support while 
+                            wiping the sleep from my eyes.</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="tl-container left">
+                    <div class="tl-content">
+                        <h5>05/2014-04/2016</h5>
+                        <h6>Desktop Support Technician</h6>
+                        <p>
+                            My first job. Support was all face-to-face at Icard Merrill and rarely over the phone; often with someone watching over 
+                            your shoulder waiting for you to be done. <strong>I learned to work with distractions, to work alongside people of varying 
+                            demeanors, to adapt to the individual's needs, and to ask for help when I needed it.</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="tl-container right">
+                    <div class="tl-content">
+                        <h5>12/2013</h5>
+                        <h6>Graduate of the University of South Florida</h6>
+                        <p>
+                            I earned a <strong>Bachelor of Science in Computer Engineering</strong> with a <strong>GPA of 3.86</strong>; graduated 
+                            <strong>magna cum laude.</strong> I became a member of the Order of Engineer and <strong>my senior project, an assistive 
+                            Android app to control a wheelchair-mounted robotic arm, earned my team mates and I a patent.</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="contact-container">
+                <h2 class="heading-light-bg">I'd Love to Hear From You!</h2>
+                <h4>Whether you have a job opening, questions, or just some feedback, I would be delighted to hear from you. Let's chat!</h4>
+            </div>
+            <form action="https://formsubmit.co/gtaylor314@icloud.com" method="POST">
+                <div class="form-container">
+                    <div class="form-col">
+                        <label class="form-label" for="name">Full Name:</label>
+                        <input class="form-fields" type="text" name="name" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-col">
+                        <label class="form-label" for="email">Email Address:</label>
+                        <input class="form-fields" type="email" name="email" id="email" placeholder="jdoe@email.com" required>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <div class="form-msg-container">
+                        <label class="form-label" for="message">Your Message:</label>
+                        <textarea class="form-msg" name="message" id="message" rows="8" maxlength="1000" placeholder="I have a job for you!" spellcheck="true" required></textarea>
+                    </div>
+                </div>
+                <input type="hidden" name="_replyto">
+                <input type="hidden" name="_next" value="https://gtaylor314.github.io/thank-you.html">
+                <input type="hidden" name="_subject" value="Form Submission for Garrett Taylor">
+                <input type="hidden" name="_autoresponse" value="Thank you so much for reaching out! I look forward to reading your message and will do my best to reply in a timely manner.">
+                <input type="hidden" name="_template" value="box">
+                <button type="submit" class="btn btn-outline-dark btn-lg">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="footer-container">
+                <a href="https://github.com/gtaylor314" target="_blank" rel="noreferrer"><span class="fa-brands fa-github fa-2xl"></span></a>
+                <a href="https://www.linkedin.com/in/gtaylor314" target="_blank" rel="noreferrer"><span class="fa-brands fa-linkedin fa-2xl"></span></a>
+                <p class="special-thanks"><small>Special thanks goes to artist Jeremy Gulotta for his portrait of me shown above in My Story.</small></p>
+            </div>
+        </section>
+
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <!-- External JavaScript -->
+        <script src="js/index.js" charset="utf-8"></script>
+    </body>
+</html>
